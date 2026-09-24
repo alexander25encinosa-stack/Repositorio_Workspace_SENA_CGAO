@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <title><%= etiqueta %></title>
+     <%- include('partials/head') %>
+</head>
+
+<body>
+    <%- include('partials/navegation') %>
+
+ <!--CREACION DE FORMULARIO-->
+
+<div class="container vh-100 d-flex justify-content-center align-items-center">
+
+    <!--CREA UNA TARJETA BOOTSTRAP PARA CONTENER EL FORMULARIO bg-dark PARA QUE EL CONTENEDOR SEA DE COLOR NEGRO-->
+
+    <div class="card bg-dark text-white text-center" style="width: 500px;">
+
+        <!--SE CREA LA CABECERA DE LA TARJETA -->
+        <div class="card-header">
+            <h3>Escribenos</h3>
+        </div>
+
+        <div class="card-body text-start">
+            <form>
+                <div class="mb-3">
+                    <label for="nombre">Nombre Completo</label>
+                    <input type="text" placeholder="Por favor escribir Nombre completo" class="form-control">
+                </div>
+
+                <div class="mb-3">
+                    <label for="correo">Correo Electrónico</label>
+                    <input type="text" placeholder="Por favor escribir Correo Electrónico" class="form-control">
+                </div>
+
+                <div class="mb-3">
+                    <label for="asunto">Asunto</label>
+                    <input type="text" placeholder="Por favor escribir Asunto" class="form-control">
+                </div>
+
+                <div class="mb-3">
+                    <label for="mensaje">Mensaje Requerido</label>
+                    <textarea name="mensaje" rows="3" class="form-control" placeholder="Por favor escriba el mensaje"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-light">Enviar</button>
+                <button type="reset" class="btn btn-outline-light">Limpiar</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+    <%- include('partials/footer') %>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

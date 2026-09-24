@@ -1,0 +1,51 @@
+
+* {
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg, #1a1a1a 0%, #4a4a4a 12%, #c0c0c0 60%, #d8d8d8 100%);
+    color: rgba(194, 179, 179, 0.815);
+    min-height: 100vh;
+    margin: 0;
+}
+
+
+body.login {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.login-card{
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 320px;
+    text-align: center;
+}
+
+.input-group{
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-group input{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+.login-buttons{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.error{
+    color: #c70606;
+    font-size: 12px;
+    margin-bottom: 10px;
+}

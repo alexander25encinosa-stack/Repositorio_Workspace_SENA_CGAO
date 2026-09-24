@@ -12,7 +12,7 @@ router.get('/', (req, res) => res.render('index', {etiqueta: 'Multisales Store',
 
 //RUTA GET PARA EL LOGIN (UNICA CON MENSAJES INCLUIDOS)
 
-router.get('login',(req,res)=>{
+router.get('/login',(req,res)=>{
 
     res.render('login',{
         etiqueta:'Vista inicio de sesion',mensaje:null

@@ -30,7 +30,7 @@ app.use(indexRoutes)
 app.use(autRoutes)
 
 //RUTA DE LA CARPETA PUBLICA  PARA ARCHIVOS ESTATICOS (CSS,IMG,VIDEOS)
-app.use(express.static(join(__dirname,'/public')))
+app.use(express.static(join(__dirname,'/Public')))
 
 // RUTA PARA INICIAR EL SERVIDOR CON SU RESPECTIVO PUERTO
 app.listen(3000)
